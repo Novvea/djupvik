@@ -1,0 +1,157 @@
+/* Sajten ska vara responsiv så att den ser bra ut och är användbar i olika bredder mellan 320px och 2560px */
+/* Sajten (design, layout) fungerar bra för viewport med bredd på 1024px */
+
+/* Kolla på avsnittet om grid */
+
+
+/* #8B8516 för hoover färg */
+
+@font-face {
+  font-family: 'Nanum Myeongjo';
+  src: url(../fonts//Nanum_Myeongjo/NanumMyeongjo-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: url(../fonts/Raleway/Raleway-VariableFont_wght.ttf);
+}
+
+body {
+  background-color: #FBFCFC;
+  font-size: medium;
+}
+h1 {
+  color: #000C1D;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.5em;
+  font-weight: 400;
+  display: flex;
+  align-items: flex-start;
+  /* justify-content: center; */
+}
+
+h2, legend {
+  color: #252A04;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+}
+h3, h4 {
+  color: #252A04;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+}
+
+p, a {
+  color: #000C1D;
+  font-family: Arial, Helvetica, sans-serif;
+ }
+
+ nav {
+  /* margin: 1rem auto; */
+ }
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  padding-left: 0;
+}
+
+nav li a {
+  padding: 4px;
+  color: #242903;
+  font-family: 'Raleway', sans-serif;
+  font-size: 0.9em;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+#logo {
+  color: #000C1D;
+  font-family: 'Nanum Myeongjo', serif; 
+  font-size: 2.3em;
+  display: flex;
+  justify-content: center;
+  margin: 0.5em auto 0.6em auto;
+}
+
+#link_english {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.container_color_a {
+  background-color: #BAC7D8;
+  padding: 30px;
+}
+.container_color_b {
+  background-color: #C6A896;
+  padding: 30px;
+}
+.container_color_c {
+  background-color: #A69A64;
+  padding: 30px;
+}
+.container_color_d {
+  background-color: #A8B5B4;
+  padding: 30px;
+}
+
+#container_main {
+  padding-top: 5px;
+}
+
+/* .container_text {
+  background-color: #FBFCF9;
+  background-color: #FBFCFC;
+  padding: 10px;
+} */
+
+section, form{
+  background-color: #FBFCF9;
+  background-color: #FBFCFC;
+  padding: 10px 20px;
+  border-radius: 20px;
+}
+
+@media(min-width: 720px) and (max-width: 1000px){
+  header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+   nav li a {
+    padding-right: 20px;
+  }
+}
+
+@media(min-width: 1000px){
+  header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+   nav li a {
+    padding-right: 20px;
+  }
+/* 
+  #logo {
+    justify-content: flex-start;
+  } */
+  
+}
