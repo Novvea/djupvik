@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kontakt Djupviks hamn</title>
+  <link rel="stylesheet" href="../styles/css/normalize.css">
+  <link rel="stylesheet" href="../styles/css/index.css">
+</head>
+<body>
+  <header>
+    <a href="/index.html" id="logo">DJUPVIKS HAMN</a>
+    <nav>
+      <ul>
+        <li>
+          <a href="/assets/html/gasthamnen.html">Gästhamnen</a>
+        </li>
+        <li>
+          <a href="/assets/html/turistmal.html">Turistmål</a>
+        </li>
+        <li>
+          <a href="/assets/html/medlemsinformation.html">Medlemsinfo</a>
+        </li>
+        <li>
+          <a href="#">Kontakt</a>
+        </li>
+      </ul>
+    </nav>
+    <hr/>
+  </header>
+  <main>
+    
+    <div class="container_color_c">
+      <h1>Kontakt</h1>
+      <section class="container_text">
+        <h2>Kontaktuppgifter </h2>
+        
+        <p>
+        Hamnfogde Bo Lautin, <!-- Skapa tel länk --> mobil 0707-920310
+
+        Djupviks hamnförening
+        c/o Ekholm
+        Eksta Hägur 170
+        623 54 Klintehamn </p>
+
+
+      </section>
+    </div>
+    <div class="container_color_a">
+      <form method="post" action="#"> <!-- action, ämdra vart formuläret ska skickas? --> <!-- Valde post pga gör det svprare att läsas av tredje part -->
+        <!-- Hon använder <p> kring alla inputs, i boken ul och li, rekomenderar ej div -->
+          <!-- Ev lägga till required * och placeholdertext -->
+        <fieldset>
+          <legend>Kontaktformulär</legend>
+            <label for="rubrik">Rubrik för ärendet</label>
+            <input type="text" id="rubrik" name="rubrik"/> <br/>
+
+            <label for="beskrivning">Beskriv ditt ärende</label>
+            <textarea rows="3" id="beskrivning" name="beskrivning"></textarea><br/>
+
+            <!-- Lägga till bild eller bifoga fil -->
+            <input type="file" name="fil"/>
+
+            <!-- Radio pga bara välja en, pga få val är det bättre att alla syns än en select, lättare att bedömma arbetsbörda direkt -->
+              <p>Vad gäller ärendet?</p>
+                <input type="radio" name="om" value="batplats" id="batplats"/>
+                <label for="batplats">Båtplats</label> 
+                <input type="radio" name="om" value="medlem" id="medlem"/>
+                <label for="medlem">Medlem</label>
+                <input type="radio" name="om" value="ovrigt" id="ovrigt"/>
+                <label for="ovrigt">Övrigt</label> <br/>
+
+
+            <!-- Checkbox pga kunna välja flera -->
+              <p>Hur vill du bli kontaktad?</p>
+                <input type="checkbox" name="kontakt" value="mail" id="mail">
+                <label for="mail">Mail</label>
+                <input type="checkbox" name="kontakt" value="tel" id="tel">
+                <label for="tel">Telefon</label>
+                <input type="checkbox" name="kontakt" value="nej" id="nej">
+                <label for="nej">Inte alls</label> <br/>
+     
+
+            <label for="telefon">Telefonnummer</label>
+            <input type="tel" id="telefon" name="telefon"/><br/>
+
+            <label for="email">Mail</label>
+            <input type="email" id="email" name="email" pattern="\w+@\.+\w"/><br/>
+
+            <input type="submit" value="Skicka in">
+
+      </fieldset>
+      </form>
+    </div>
+  </main>
+  <footer>
+    Copyright &copy; Djupvikshamn.se info@djupvikshamn.se
+  </footer>
+</body>
+</html>
