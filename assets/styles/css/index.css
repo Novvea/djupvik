@@ -71,6 +71,15 @@ a {
   text-decoration: none;
 }
 
+figure {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 #logo {
   color: #000C1D;
   font-family: 'Nanum Myeongjo', serif; 
@@ -140,6 +149,8 @@ section, form{
 }
 
 @media(min-width: 1000px){
+
+  /* Lägg till max-width på containrar för att det inte ska bli allt för utdraget */
   header {
     display: grid;
     grid-template-columns: 1fr 1fr;
