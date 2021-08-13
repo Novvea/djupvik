@@ -87,19 +87,19 @@ a {
 
 .container_color_a {
   background-color: #BAC7D8;
-  padding: 30px;
+  padding: 20px;
 }
 .container_color_b {
   background-color: #C6A896;
-  padding: 30px;
+  padding: 20px;
 }
 .container_color_c {
   background-color: #A69A64;
-  padding: 30px;
+  padding: 20px;
 }
 .container_color_d {
   background-color: #A8B5B4;
-  padding: 30px;
+  padding: 20px;
 }
 
 #container_main {
@@ -133,6 +133,10 @@ section, form{
    nav li a {
     padding-right: 20px;
   }
+  .container_color_a,  .container_color_b, .container_color_c, .container_color_d{
+    padding: 30px;
+  }
+
 }
 
 @media(min-width: 1000px){
@@ -154,4 +158,7 @@ section, form{
     justify-content: flex-start;
   } */
   
+  .container_color_a,  .container_color_b, .container_color_c, .container_color_d{
+    padding: 30px;
+  }
 }
