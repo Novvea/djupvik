@@ -41,11 +41,18 @@ h3, h4 {
   font-weight: 500;
 }
 
+/* h4 {
+  margin-top: 0;
+} */
+
 p, a {
   color: #000C1D;
   font-family: Arial, Helvetica, sans-serif;
  }
 
+/*  header {
+   position: fixed;
+ } */
  nav {
   /* margin: 1rem auto; */
  }
@@ -71,13 +78,15 @@ a {
   text-decoration: none;
 }
 
-figure {
-  margin: 0;
+figcaption {
+  text-align: center;
 }
 
 img {
   max-width: 100%;
   height: auto;
+  border-radius: 5px;
+  margin: 0 auto
 }
 
 #logo {
@@ -126,8 +135,10 @@ section, form{
   background-color: #FBFCFC;
   padding: 10px 20px;
   border-radius: 20px;
+  max-width: 100%;
 }
 
+/*************************************************************/
 @media(min-width: 720px) and (max-width: 1000px){
   header {
     display: grid;
@@ -146,8 +157,26 @@ section, form{
     padding: 30px;
   }
 
+  figure {
+    float: right;
+    margin: 0 10px;
+  }
+  .container_float {
+    text-align: left;
+  }
+
+  source {
+    max-width: 100%;
+  }
+
+  picture {
+    margin: 0 0 5px 5px;
+
+  }
+
 }
 
+/*************************************************************/
 @media(min-width: 1000px){
 
   /* Lägg till max-width på containrar för att det inte ska bli allt för utdraget */
@@ -164,6 +193,10 @@ section, form{
    nav li a {
     padding-right: 20px;
   }
+
+  p {
+    margin: 5px 0;
+  }
 /* 
   #logo {
     justify-content: flex-start;
@@ -172,4 +205,54 @@ section, form{
   .container_color_a,  .container_color_b, .container_color_c, .container_color_d{
     padding: 30px;
   }
+
+  .text_with_pic {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-auto-rows: min-content;
+    grid-template-areas: 
+    "rubrik rubrik"
+    "text1 bild"
+    "text2 bild"
+  }
+
+  article.text_with_pic {
+    display: grid;
+    grid-template-columns: 65% 35%;
+/*     grid-auto-rows: min-content;
+ */    grid-auto-rows: max-content;
+    grid-template-areas: 
+    "rubrik bild"
+    "text_a bild"
+    "text_b bild"
+  }
+
+  h2 {grid-area: rubrik;}
+  h3 {grid-area: rubrik;}
+  picture {grid-area: bild }
+  figure {grid-area: bild }
+  p > p {grid-area: text1;}
+  picture > p {grid-area: text2;}
+  p + p {grid-area: text3;}
+  p > section {grid-area: text4;}
+  h3 > .container_text {grid-area: text_a;}
+  figure > .container_text {grid-area: text_b;}
+
+/*    article {
+    overflow: auto;
+  } */ 
+
+/*   figure {
+    float: right;
+    position: relative;
+  }
+
+ article h3 h4 ~ p {
+  float: left;
+} */
+
+
+
+
+
 }
