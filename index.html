@@ -30,14 +30,12 @@
     </nav>
   </header>
   <main>
-    <!-- Hur får jag bilden att inte hoppa när den först laddas in? -->
     <picture>
       <source media="(min-width: 320px) and (max-width: 720px)" srcset="assets/images/D-10_hog_720.jpg"/>
       <source media="(min-width: 721px) and (max-width: 999px)" srcset="assets/images/D-10_smal_1000.jpg"/>
       <source media="(min-width: 1000px)" srcset="assets/images/D-10_stor.jpg"/>
       <img src="./assets/images/D-10_stor.jpg" alt="Sandstrand med skog i bakgrunden"/>
     </picture>
-    <!-- Lägg till någon länk till infom på engelska och att den då vecklas ut-->
     <div class="container_color_a" id="container_main">
       <div class="container_content">
       <h1>Välkomna till Djupviks hamn!</h1>
@@ -63,7 +61,6 @@
                 <p>År 1920 gjordes även en stor reparation vid fiskeläget, bland annat uppsättning av inseglingsmärken, reparation av brunnen, ett vattenspann, linor till lyktorna, brännare och glas till lyktorna och en protokollsbok för summa 18 kronor och 45 öre. Fyrmästare heter nu Marta Andersson. Det var inte bara Ekstabor som var fiskare i Djupvik, det var även folk från Fröjel, Sproge, Silte och Levide. För året 1922 Blev John Petterson, Gustavs i Fröjel vald till hamnfogde. Till fyrmästare anmälde sig Jacob Larsson, Bopparve. Fyrmästaren skulle ha 7 kast per man, dock fyrade han inte under två valar per natt. 1929 blev det 10 kast per man. 1931 valdes Hedvig Larsson, Bopparve till fyrmästare. 1934 blev det Fridolf Johansson, Tomsarve. 1935 blev det Ture Olsson, Jakobs. 1942 valdes Edvard Viberg, Prästgården. För år 1948 valdes Axel Pettersson, Bopparve och för år 1950 valdes Hugo Andersson, Burge.</p>
                 <p>1955 beslöts det att fiskarna skulle ringa till fyrmästaren om det behövdes fyras så han slapp cykla till Djupvik i onödan. Årsmötet med fiskarna vid Djupviks fiskläge 1943 beslöts det att tillsätta en kommitté på 2 man som skulle undersöka om ett eventuellt hamnbygge. Kommittén som valdes var Konrad Olofsson, Grymlings och Konrad Jakobsson, Tomsarve.</p>
               </div>
-                <!-- “HÄR BÖR BILDEN PÅ KONRAD KUNNA PASSA… VI VILL ÄVEN ATT HANS NAMN STÅR I NÄRHETEN UTAV BILDEN: Konrad Jakobsson, Tomsarve” -->
                 <figure>
                   <img src="assets/images/Konrad.jpg" alt="En sittande man på en klippa, bilden har en äldre stil" width="365px" height="480px">
                   <figcaption>Konrad Jakobsson, Tomsarve</figcaption>
@@ -80,7 +77,6 @@
             <h3>En berättelse om Stormnatten 1941</h3>
               <p>Denna berättelse är skriven med personernas vardagsnamn, namnförklaring kommer på slutet. Det var fint väder vid middagstid den 26/10 1941 när tre båtlag gav sig av ut på driv med strömmingsgarn. Vädret var fint ända tills de satt klart, då började det blåsa upp till nordlig storm. Man började genast dra upp garnen igen, för att komma i land så fort som möjligt. Det var bara ett båtlag som kom till Djupvik, det var båtlaget med Alfred Pettsen, Ajvide Ebe och Bas-Hugo. Ett båtlag kom i land i Vavle, det var Konne Grömlings, Tomsare Ricken och Pauels Lasse. Mellan Djupvik och Vavle är inte så långt så att man kunde snabbt meddela till Djupvik att man kommit i land i Vavle. Det hade blivit bensintorrt och i all turbulens i stormen och mörkret tog Grymlingen fel dunk, han hällde på vatten så motorn startade inte.</p>
               <h4>Namnförklaring</h4>
-              <!-- KOMMENTAR: NAMNFÖRKLARINGEN BÖR GÖRAS TYDLIG PÅ NÅGOT SÄTT. -->
               <ul>
                 <li>Alfred Pettsen - Alfred Pettersson</li>
                 <li>Ajvide Ebe - Edvin Jakobsson, Ajvide</li>
@@ -102,17 +98,16 @@
       <h2 id="senaste_nytt">Senaste nytt</h2>
         <article>
           <h3>Bryggdagen</h3>
-          <h4>2019-04-06</h4> <!-- Skapa dateelement -->
+          <h4><time datetime="2019-04-06">2019-04-06</time></h4>
             <p>Lördagen den 6 april samlades ett antal av föreningens medlemmar för arbete i hamnen. Kiosken, kajerna och stranden städades. Kajer lagades och gräs brändes. Diverse fix på många håll. Vädret var bra och korven god. Det som återstår inför säsongen är att ta bort släke från stranden, att sätta upp ramp vid kiosken och att fylla kiosken med varor.</p>
         </article>
         <article class="text_with_pic">
           <h3>Succé för hamnens dag! </h3> 
-            <h4>2018-07-16</h4> <!-- Skapa dateelement -->
+            <h4><time datetime="2018-07-16">2018-07-16</time></h4>
             <figure>
               <picture>
                 <source media="(min-width: 720px)" srcset="assets/images/HamnensDag_shorter.jpg"/>
-<!--                 <source media="(min-width: 1000px)" srcset="assets/images/HamnensDag.jpg"/>
- -->                <img src="assets/images/HamnensDag.jpg" alt="Många personer sittandes i en ring en solig dag." >
+               <img src="assets/images/HamnensDag.jpg" alt="Många personer sittandes i en ring en solig dag." >
               </picture>
             <figcaption>Foto: Björn Hjernquist</figcaption>
           </figure>
@@ -120,12 +115,7 @@
             <div class="container_float">
               <p>Lördagen den 16 juli arrangerade föreningen Djupviks hamn i Eksta ”Hamnens dag” i Djupvik. Vårt arbete har med åren alltmer också inriktats på att alla besökare, även de som kommer landvägen skall trivas i det vackra hamnområdet. Nu bjöds det in till ”Hamnens dag”. På plats fanns sjöfartsverkets SAR-helikopter, Sjöräddningens båt Hwitstjärna, släckningsbil från räddningstjänsten i Klintehamn, russ från Gannarve och ett antal loppisförsäljare. Aktiviteten lockade ett stort antal besökare.</p>
               <p>Uppskattningsvis 1000 besökare sökte sig under dagen till Djupvik. Intresset var stort för de besökande organisationerna som informerade och alla fick möjlighet att titta och ställa frågor. Barnen fick rida, de bjöds på bulle och dricka och många prövade lyckan i fiskdammen. Det fanns möjlighet att handla kaffe, korv, dricka och glass. Många dröjde sig kvar i hamnområdet och trivdes i det inledningsvis lite blåsiga men vackra vädret.</p>
-            </div>
- 
-              <!-- Tillhörande bild till denna text är HamnensDag.jpg – i bildtexten ska det stå ”Foto: Björn Hjernquist” -->
-    
-
-  
+            </div>  
         </article>
       </section>
     </div>
