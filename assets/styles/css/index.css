@@ -46,19 +46,20 @@ p, a {
   font-family: Arial, Helvetica, sans-serif;
  }
 
-/*  header {
-   position: fixed;
- } */
+header {
+   border-bottom: 1px solid #000C1D;
+}
 
  nav {
-  /* margin: 1rem auto; */
+
  }
 
 nav ul {
   display: flex;
   justify-content: center;
+  align-items: center;
   padding-left: 0;
-}
+ }
 
 nav li a {
   padding: 4px;
@@ -78,9 +79,13 @@ a {
 section, form, .container_background{
   background-color: #FBFCF9;
   background-color: #FBFCFC;
-  padding: 10px 20px;
+  padding: 10px 20px 20px 20px;
   border-radius: 20px;
   max-width: 100%;
+}
+
+picture {
+  display: flex;
 }
 
 figcaption {
@@ -90,13 +95,24 @@ figcaption {
 img {
   max-width: 100%;
   height: auto;
-  border-radius: 5px;
-  margin: 0 auto
 }
+
+footer {
+  display: flex;
+  justify-content: center;
+  border-top: 1px solid #000C1D;
+}
+
+footer p {
+  font-size: 0.8em;
+
+} 
+
 table {
   width: 100%;
-  max-width: 700px;
+  max-width: 1000px;
   border-collapse: collapse;
+  margin: 0 auto;
 }
 table > caption {
   color: #252A04;
@@ -134,13 +150,42 @@ tr:nth-of-type(odd) {
 fieldset{ 
   width: 600px; 
   border: solid medium #A8B5B4;
+  margin: 0 auto;
 }
-label{ 
-  width: 6em; 
-  float: left; 
-  text-align: right;
-  margin-right: 10px;
+
+label {
+  color: #000C1D;
+  font-family: Arial, Helvetica, sans-serif;
 }
+
+form ul {
+  padding: 0;
+  list-style-type: none;
+}
+ form li{ 
+  border-bottom: 1px solid #ccc;
+  padding: 1rem 0;
+}
+
+form li:last-child {
+  border-bottom: none;
+}
+
+input[type="submit"] {
+  color: #000C1D;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.4em;
+  background-color: #BAC7D8;
+  padding: 6px 12px;
+  border-radius: 5px;
+}
+
+input:hover, input:active, input:focus, textarea:hover, textarea:active, textarea:focus {
+  border: 2px solid #8B8516 ;
+  outline: none;
+}
+
+
 
 #logo {
   color: #000C1D;
@@ -188,7 +233,7 @@ label{
 @media(min-width: 720px) and (max-width: 1000px){
   header {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 4fr 5fr;
   }
   nav {
     display: flex;
@@ -198,6 +243,10 @@ label{
 
    nav li a {
     padding-right: 20px;
+  }
+
+  h1 {
+    font-size: 1.8em;
   }
   .container_color_a,  .container_color_b, .container_color_c, .container_color_d{
     padding: 30px;
@@ -214,11 +263,6 @@ label{
   source {
     max-width: 100%;
   }
-
-  picture {
-    margin: 0 0 5px 5px;
-  }
-
 }
 
 /*************************************************************/
@@ -227,7 +271,11 @@ label{
   /* Lägg till max-width på containrar för att det inte ska bli allt för utdraget */
   header {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 4fr 5fr;
+  }
+
+  #logo {
+    font-size: 2.7em;
   }
   nav {
     display: flex;
@@ -237,6 +285,11 @@ label{
 
    nav li a {
     padding-right: 20px;
+    font-size: 1.1em;
+  }
+
+  h1 {
+    font-size: 2em;
   }
 
   p {
