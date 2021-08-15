@@ -19,6 +19,7 @@
 body {
   background-color: #FBFCFC;
   font-size: medium;
+  line-height: 1.4;
 }
 h1 {
   color: #000C1D;
@@ -50,8 +51,8 @@ header {
    border-bottom: 1px solid #000C1D;
 }
 
- nav {
-
+ li {
+  font-family: Arial, Helvetica, sans-serif;
  }
 
 nav ul {
@@ -61,15 +62,15 @@ nav ul {
   padding-left: 0;
  }
 
+ nav li {
+   list-style: none;
+ }
+
 nav li a {
   padding: 4px;
   color: #242903;
   font-family: 'Raleway', sans-serif;
   font-size: 0.9em;
-}
-
-li {
-  list-style: none;
 }
 
 a {
